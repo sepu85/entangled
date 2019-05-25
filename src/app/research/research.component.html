@@ -1,0 +1,14 @@
+<body ng-app="myApp">
+
+    <div ng-include="'https://www.researchgate.net/publication/333340188_Entanglements_and_why_I_think_they_are_a_good_feature_for_Swarm_and_other_systems'">waaaaaaa</div>
+    
+    <script>
+    var app = angular.module('myApp', [])
+    
+    app.config(function($sceDelegateProvider) {
+      $sceDelegateProvider.resourceUrlWhitelist([
+        'https://www.researchgate.net/**'
+      ]);
+    });
+    
+    </script>
