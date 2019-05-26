@@ -1,8 +1,7 @@
 <section class="cuerpo">
   <section class="tabla chuncks">
-    <div class="columna">
-      <div *ngFor="let cuadro of chunks" class="chunck">{{cuadro}}</div>
-
+    <div class="columna" *ngFor = "let columnas of matrixChunks">
+      <div class="chunck" *ngFor="let cuadro of columnas">{{cuadro}}</div>
     </div>
   </section>
 </section>

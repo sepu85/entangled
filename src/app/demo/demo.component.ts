@@ -8,21 +8,24 @@ import { Component, OnInit } from '@angular/core';
 export class DemoComponent implements OnInit {
 
   public chunks = [];
-  public columnsChunks = [];
+  public matrixChunks = [];
   private chunksQty = 25;
+  private cont = 0;
+  public columnas;
 
   constructor() { 
 
-    for (let i = 1 ; i<= this.chunksQty ; i++) {
-      this.chunks.push(i)
-      
-      console.log(this.chunks);
+    for ( var i = 0 ; i<5 ; i++ ) {
+      this.matrixChunks[i] = [];
+      for ( let j = 0 ; j<5 ; j++) {
+        this.cont++;
+        this.matrixChunks[i][j] = this.cont ;
+      }
+      this.columnas = this.matrixChunks[i];
+      console.log(this.columnas)
     }
+    console.log(this.matrixChunks)
 
-    for (let i = 0 ; i <= (this.chunksQty/5); i++) {
-      console.log(i)
-
-    }
   }
 
   ngOnInit() {

@@ -6,3 +6,7 @@ div.chunck {
     margin: 2px
 
 }
+
+div.columna {
+    display: inline-block
+}
