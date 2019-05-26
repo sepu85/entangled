@@ -1,7 +1,30 @@
 <section class="cuerpo">
   <section class="tabla chuncks">
+      <h4>Chunks of Data</h4>
     <div class="columna" *ngFor = "let columnas of matrixChunks">
       <div class="chunck" *ngFor="let cuadro of columnas">{{cuadro}}</div>
     </div>
   </section>
+
+  <section class="tabla XORs">
+    <h4>Horizontal XORs</h4>
+      <div class="columna" *ngFor = "let columnas of matrixChunks">
+        <div class="h" *ngFor="let cuadro of columnas">p{{cuadro}}_{{cuadro + 5}}</div>
+      </div>
+    </section>
+
+    <section class="tabla XORs">
+        <h4>Right Handed XORs</h4>
+        <div class="columna" *ngFor = "let columnas of matrixChunks">
+          <div class="rh" *ngFor="let cuadro of columnas">p{{cuadro}}_{{cuadro + 5}}</div>
+        </div>
+      </section>
+
+      <section class="tabla XORs">
+          <h4>Left Handed XORs</h4>
+          <div class="columna" *ngFor = "let columnas of matrixChunks">
+            <div class="lh" *ngFor="let cuadro of columnas">p{{cuadro}}_{{cuadro + 5}}</div>
+          </div>
+        </section>
+
 </section>

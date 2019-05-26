@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UploadComponent implements OnInit {
 
+ 
+
   constructor() { }
 
   ngOnInit() {

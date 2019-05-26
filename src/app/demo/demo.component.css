@@ -7,6 +7,41 @@ div.chunck {
 
 }
 
+div.h {
+    background-color: rgb(238, 255, 0);
+    width: 75px;
+    height: 75px;
+    border-radius: 10px;
+    margin: 2px
+
+}
+
+div.lh {
+    background-color: rgb(230, 41, 97);
+    width: 75px;
+    height: 75px;
+    border-radius: 10px;
+    margin: 2px
+
+}
+
+div.rh {
+    background-color: rgb(51, 255, 0);
+    width: 75px;
+    height: 75px;
+    border-radius: 10px;
+    margin: 2px
+
+}
+
 div.columna {
     display: inline-block
+}
+
+.XORs {
+    display: inline-block
+}
+
+section {
+    padding: 15px;
 }
